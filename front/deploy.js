@@ -16,9 +16,9 @@ ssh.connect({
         port: 22
     })
     .then(function() {
-        ssh.execCommand('rm -Rf *', { cwd: '/var/www/lojaPopCorn/spa/' }).then(function(result) {
-            console.log('rm -Rf * STDOUT: ' + result.stdout);
-            console.log('rm -Rf * STDERR: ' + result.stderr);
+        ssh.execCommand('rm -Rfv *', { cwd: '/var/www/lojaPopCorn/spa/' }).then(function(result) {
+            console.log('rm -Rfv * STDOUT: ' + result.stdout);
+            console.log('rm -Rfv * STDERR: ' + result.stderr);
 
             ssh.putDirectory('../server/spa/', '/var/www/lojaPopCorn/spa/', {
                 recursive: true,
