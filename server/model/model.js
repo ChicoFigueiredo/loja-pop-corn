@@ -10,6 +10,7 @@ var Schema = mongo.Schema;
 var UsersSchema = new Schema({
     name: { type: String },
     address: { type: String },
+    link: { type: String },
 }, { versionKey: false });
 
 

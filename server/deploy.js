@@ -38,15 +38,25 @@ ssh.connect({
                 }
             }
         }).then(function(status) {
-            console.log('the directory transfer was', status ? 'successful' : 'unsuccessful');
-            console.log('failed transfers', failed.join(', '));
-            console.log('successful transfers', successful.join(', '));
-            ssh.execCommand('sudo pm2 restart www *', { cwd: '/var/www/lojaPopCorn/' }).then(function(result) {
-                console.log('rm -Rf * STDOUT: ' + result.stdout);
-                console.log('rm -Rf * STDERR: ' + result.stderr);
-                ssh.dispose();
+            console.log("\n\n****************************************************************************");
+            console.log('*  the directory transfer was ', status ? 'successful' : 'unsuccessful');
+            console.log('*  failed transfers: ', failed.join(', '));
+            console.log('*  successful transfers: ', successful.join(', '));
+            console.log("\n\n----------------------------------------------------------------------------");
+            const cmd1 = "sudo npm install";
+            console.log("executando: " + cmd1 + "\n");
+            ssh.execCommand(cmd1, { cwd: '/var/www/lojaPopCorn/' }).then(function(result) {
+                console.log(cmd1 + ' STDOUT: ' + result.stdout);
+                console.log('');
+                console.log(cmd1 + ' STDERR: ' + result.stderr);
+                console.log("\n\n----------------------------------------------------------------------------");
+                const cmd2 = "sudo pm2 restart www --update-env";
+                console.log("executando: " + cmd2 + "\n");
+                ssh.execCommand(cmd2, { cwd: '/var/www/lojaPopCorn/' }).then(function(result) {
+                    console.log(cmd2 + ' STDOUT: \n' + result.stdout);
+                    console.log(cmd2 + ' STDERR: \n' + result.stderr);
+                    ssh.dispose();
+                });
             });
         });
-
-
     }).then(function() {});

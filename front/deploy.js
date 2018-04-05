@@ -16,10 +16,15 @@ ssh.connect({
         port: 22
     })
     .then(function() {
-        ssh.execCommand('rm -Rfv *', { cwd: '/var/www/lojaPopCorn/spa/' }).then(function(result) {
-            console.log('rm -Rfv * STDOUT: ' + result.stdout);
-            console.log('rm -Rfv * STDERR: ' + result.stderr);
-
+        console.log("\n\n****************************************************************************");
+        const cmd1 = 'rm -Rfv *';
+        console.log("executando: " + cmd1 + "\n");
+        ssh.execCommand(cmd1, { cwd: '/var/www/lojaPopCorn/spa/' }).then(function(result) {
+            console.log(cmd1 + ' STDOUT: \n' + result.stdout);
+            console.log('');
+            console.log(cmd1 + ' STDERR: \n' + result.stderr);
+            console.log("\n\n****************************************************************************");
+            console.log("executando: scp dir \n\n");
             ssh.putDirectory('../server/spa/', '/var/www/lojaPopCorn/spa/', {
                 recursive: true,
                 concurrency: 10,
@@ -38,9 +43,10 @@ ssh.connect({
                     }
                 }
             }).then(function(status) {
-                console.log('the directory transfer was', status ? 'successful' : 'unsuccessful');
-                console.log('failed transfers', failed.join(', '));
-                console.log('successful transfers', successful.join(', '));
+                console.log("\n\n-------------------------------------------------------------------------------");
+                console.log('*  the directory transfer was ', status ? 'successful' : 'unsuccessful');
+                console.log('*  failed transfers: ', failed.join(', '));
+                console.log('*  successful transfers: ', successful.join(', '));
                 ssh.dispose();
             });
         })
