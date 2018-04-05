@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var model = require('../model/model');
+var users = require('../model/users');
 
 // /* GET users listing. */
 // router.get('/', function(req, res, next) {
@@ -8,8 +8,8 @@ var model = require('../model/model');
 // });
 
 
-router.post("/api/SaveUser", function(req, res) {
-    var mod = new model(req.body);
+router.post("/save", function(req, res) {
+    var mod = new users(req.body);
     if (req.body.mode == "Save") {
         mod.save(function(err, data) {
             if (err) {
@@ -19,7 +19,7 @@ router.post("/api/SaveUser", function(req, res) {
             }
         });
     } else {
-        model.findByIdAndUpdate(req.body.id, { name: req.body.name, address: req.body.address },
+        users.findByIdAndUpdate(req.body.id, { name: req.body.name, address: req.body.address },
             function(err, data) {
                 if (err) {
                     res.send(err);
@@ -32,8 +32,8 @@ router.post("/api/SaveUser", function(req, res) {
     }
 })
 
-router.post("/api/deleteUser", function(req, res) {
-    model.remove({ _id: req.body.id }, function(err) {
+router.post("/delete", function(req, res) {
+    users.remove({ _id: req.body.id }, function(err) {
         if (err) {
             res.send(err);
         } else {
@@ -44,12 +44,27 @@ router.post("/api/deleteUser", function(req, res) {
 
 
 
-router.get("/api/getUser", function(req, res) {
-    model.find({}, function(err, data) {
+router.get("/list", function(req, res) {
+    users.find({}, function(err, data) {
         if (err) {
             res.send(err);
         } else {
             res.send(data);
+        }
+    });
+})
+
+router.get("/sample", function(req, res) {
+    var u = new users({
+        name: req.query.nome,
+        address: req.query.endereco,
+        link: req.query.link,
+    });
+    u.save(function(err, data) {
+        if (err) {
+            res.send(err);
+        } else {
+            res.send({ data: "Record has been Inserted..!!" });
         }
     });
 })
