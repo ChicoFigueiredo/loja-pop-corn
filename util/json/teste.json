@@ -1,0 +1,121 @@
+{
+    "id": 383,
+    "name": "Pomada  Desitin Roxa 136g",
+    "slug": "pomada-desitin-roxa-136g1",
+    "permalink": "https://nova.lojapopcorn.com.br/produto/pomada-desitin-roxa-136g1/",
+    "date_created": "2018-06-03T18:10:23",
+    "date_created_gmt": "2018-06-03T21:10:23",
+    "date_modified": "2018-06-03T18:32:42",
+    "date_modified_gmt": "2018-06-03T21:32:42",
+    "type": "simple",
+    "status": "publish",
+    "featured": true,
+    "catalog_visibility": "visible",
+    "description": "<p dir=\"ltr\">CONTÉM 40% DE ZINCO, QUE ACELERA A CICATRIZAÇÃO DO TECIDO LESADO, ELIMINANDO MAIS RAPIDAMENTE AS ASSADURAS. FORMA UMA CAMADA PROTETORA SOBRE A PELE DO SEU BEBÊ PARA ACALMAR E ALIVIAR O DESCONFORTO PROVOCADO POR ASSADURA, PROPORCIONANDO ALIVIO EM HORAS. CREME HIPOALERGÊNICO, DERMATOLOGICAMENTE TESTADO</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "80.00",
+    "regular_price": "80.00",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#82;&#36;</span>80,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+        "length": "",
+        "width": "",
+        "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [
+        295,
+        298,
+        274,
+        257,
+        255
+    ],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [{
+        "id": 23,
+        "name": "Banho e Troca",
+        "slug": "banho-e-troca"
+    }],
+    "tags": [],
+    "images": [{
+            "id": 382,
+            "date_created": "2018-06-03T15:10:23",
+            "date_created_gmt": "2018-06-03T21:10:23",
+            "date_modified": "2018-06-03T15:10:23",
+            "date_modified_gmt": "2018-06-03T21:10:23",
+            "src": "https://nova.lojapopcorn.com.br/wp-content/uploads/2018/06/611506-mlb26633049692_012018-o-8501db6fe9c670d6df15239150605146-1024-1024.jpg",
+            "name": "611506-mlb26633049692_012018-o-8501db6fe9c670d6df15239150605146-1024-1024.jpg",
+            "alt": "",
+            "position": 0
+        },
+        {
+            "id": 382,
+            "date_created": "2018-06-03T15:10:23",
+            "date_created_gmt": "2018-06-03T21:10:23",
+            "date_modified": "2018-06-03T15:10:23",
+            "date_modified_gmt": "2018-06-03T21:10:23",
+            "src": "https://nova.lojapopcorn.com.br/wp-content/uploads/2018/06/611506-mlb26633049692_012018-o-8501db6fe9c670d6df15239150605146-1024-1024.jpg",
+            "name": "611506-mlb26633049692_012018-o-8501db6fe9c670d6df15239150605146-1024-1024.jpg",
+            "alt": "",
+            "position": 1
+        }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [{
+            "id": 5073,
+            "key": "_wpas_done_all",
+            "value": "1"
+        },
+        {
+            "id": 5606,
+            "key": "_swatch_type",
+            "value": "default"
+        }
+    ],
+    "_links": {
+        "self": [{
+            "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/383"
+        }],
+        "collection": [{
+            "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products"
+        }]
+    }
+}

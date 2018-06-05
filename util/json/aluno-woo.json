@@ -1,0 +1,106 @@
+{
+    "id": 15,
+    "date_created": "2018-04-28T15:33:40",
+    "date_created_gmt": "2018-04-28T15:33:40",
+    "date_modified": "2018-04-28T15:33:40",
+    "date_modified_gmt": "2018-04-28T15:33:40",
+    "email": "fran.fig+wp@gmail.com",
+    "first_name": "Francisco Lima Figueiredo",
+    "last_name": "",
+    "role": "customer",
+    "username": "039.100.557-02",
+    "billing": {
+        "first_name": "Francisco Lima Figueiredo",
+        "last_name": "",
+        "company": "",
+        "address_1": "Quadra 210 lote 8 Bloco B Apt",
+        "address_2": "Residencial Yes",
+        "city": "Brasília",
+        "state": "DF",
+        "postcode": "71931-000",
+        "country": "BR",
+        "email": "fran.fig+wp@gmail.com",
+        "phone": "(61) 99313-3560",
+        "number": "708",
+        "neighborhood": "Águas Claras",
+        "persontype": "F",
+        "cpf": "03910055702",
+        "rg": "2763789 SSP DF",
+        "cnpj": "",
+        "ie": "",
+        "birthdate": "",
+        "sex": "",
+        "cellphone": "(61) 99313-3560"
+    },
+    "shipping": {
+        "first_name": "Francisco Lima Figueiredo",
+        "last_name": "",
+        "company": "CAIXA",
+        "address_1": "Quadra 210 lote 8 Bloco B Apt",
+        "address_2": "Residencial Yes",
+        "city": "Brasília",
+        "state": "",
+        "postcode": "71931-000",
+        "country": "BR",
+        "number": "708",
+        "neighborhood": "Águas Claras"
+    },
+    "is_paying_customer": false,
+    "orders_count": 0,
+    "total_spent": "0.00",
+    "avatar_url": "https://secure.gravatar.com/avatar/5e8a45a828b43edc516d635ac11c7d28?s=96&d=mm&r=g",
+    "meta_data": [{
+            "id": 565,
+            "key": "shipping_method",
+            "value": ""
+        },
+        {
+            "id": 566,
+            "key": "billing_cpf",
+            "value": "03910055702"
+        },
+        {
+            "id": 567,
+            "key": "billing_rg",
+            "value": "2763789 SSP DF"
+        },
+        {
+            "id": 568,
+            "key": "billing_number",
+            "value": "708"
+        },
+        {
+            "id": 569,
+            "key": "billing_neighborhood",
+            "value": "Águas Claras"
+        },
+        {
+            "id": 570,
+            "key": "billing_cellphone",
+            "value": "(61) 99313-3560"
+        },
+        {
+            "id": 571,
+            "key": "billing_email-2",
+            "value": "fran.fig+wp@gmail.com"
+        },
+        {
+            "id": 572,
+            "key": "shipping_number",
+            "value": "708"
+        },
+        {
+            "id": 573,
+            "key": "shipping_neighborhood",
+            "value": "Águas Claras"
+        }
+    ],
+    "_links": {
+        "self": [{
+            "href": "https://ultraposgraduacao.com.br/wp-json/wc/v2/customers/15"
+        }],
+        "collection": [{
+            "href": "https://ultraposgraduacao.com.br/wp-json/wc/v2/customers"
+        }]
+    }
+}

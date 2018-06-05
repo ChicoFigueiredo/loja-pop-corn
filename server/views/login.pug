@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= Login
+  form(action="/login" method="post")
+    div
+      label(for='username') Usuario:
+      input(type='text' id='username' name='username')
+    div
+      label(for='password') Senha: 
+      input(type='text' id='usepasswordrname' name='password')
+    div
+      input(type="submit" value="Log In")

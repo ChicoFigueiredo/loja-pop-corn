@@ -1,0 +1,376 @@
+﻿[
+    {
+        "id": 2250513,
+        "name": {
+            "pt": "MBA"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "mba"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:01:14+00:00",
+        "updated_at": "2018-03-22T00:47:18+00:00"
+    },
+    {
+        "id": 2697870,
+        "name": {
+            "pt": "PED - PROGRAMA DE ESPECIALIZAÇÃO DE DOCENTES"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "ped-programa-de-especializacao-de-docentes"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2018-03-21T22:52:18+00:00",
+        "updated_at": "2018-03-22T03:08:14+00:00"
+    },
+    {
+        "id": 2250506,
+        "name": {
+            "pt": "GESTÃO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "gestao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:23+00:00",
+        "updated_at": "2018-03-22T03:08:14+00:00"
+    },
+    {
+        "id": 2250516,
+        "name": {
+            "pt": "ADMINISTRAÇÃO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "administracao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:02:07+00:00",
+        "updated_at": "2018-03-22T03:31:35+00:00"
+    },
+    {
+        "id": 2250504,
+        "name": {
+            "pt": "EDUCAÇÃO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "educacao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:19+00:00",
+        "updated_at": "2018-03-22T02:56:22+00:00"
+    },
+    {
+        "id": 2698576,
+        "name": {
+            "pt": "EDUCAÇÃO INCLUSIVA"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "educacao-inclusiva"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2018-03-22T00:28:46+00:00",
+        "updated_at": "2018-03-22T02:56:22+00:00"
+    },
+    {
+        "id": 2250511,
+        "name": {
+            "pt": "METODOLOGIAS DE ENSINO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "ensino-religioso"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:57+00:00",
+        "updated_at": "2018-03-22T03:08:14+00:00"
+    },
+    {
+        "id": 2250510,
+        "name": {
+            "pt": "DOCÊNCIA"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "docencia"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:33+00:00",
+        "updated_at": "2018-03-22T03:08:14+00:00"
+    },
+    {
+        "id": 2250512,
+        "name": {
+            "pt": "RECURSOS HUMANOS"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "recursos-humanos"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:01:13+00:00",
+        "updated_at": "2018-03-22T03:33:16+00:00"
+    },
+    {
+        "id": 2698646,
+        "name": {
+            "pt": "POLITICA E SOCIEDADE"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "politica-e-sociedade"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2018-03-22T00:45:47+00:00",
+        "updated_at": "2018-03-22T00:56:45+00:00"
+    },
+    {
+        "id": 2250505,
+        "name": {
+            "pt": "ALFABETIZAÇÃO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "alfabetizacao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:19+00:00",
+        "updated_at": "2018-03-22T00:47:18+00:00"
+    },
+    {
+        "id": 2250508,
+        "name": {
+            "pt": "LITERATURA"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "literatura"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:26+00:00",
+        "updated_at": "2018-03-22T01:54:46+00:00"
+    },
+    {
+        "id": 2267677,
+        "name": {
+            "pt": "ENSINO DE LINGUAS"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "ensino-de-linguas"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-18T17:40:14+00:00",
+        "updated_at": "2018-03-22T01:12:52+00:00"
+    },
+    {
+        "id": 2250518,
+        "name": {
+            "pt": "MARKETING"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "marketing"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:03:17+00:00",
+        "updated_at": "2018-03-22T03:28:55+00:00"
+    },
+    {
+        "id": 2250507,
+        "name": {
+            "pt": "COMUNICAÇÃO"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "comunicacao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:23+00:00",
+        "updated_at": "2018-03-22T03:26:27+00:00"
+    },
+    {
+        "id": 2250514,
+        "name": {
+            "pt": "FINANÇAS E CONTABILIDADE"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "financas"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:01:17+00:00",
+        "updated_at": "2018-03-22T03:12:43+00:00"
+    },
+    {
+        "id": 2250509,
+        "name": {
+            "pt": "MEIO AMBIENTE"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "meio-ambiente"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": null
+        },
+        "seo_description": {
+            "pt": null
+        },
+        "created_at": "2017-09-10T14:00:30+00:00",
+        "updated_at": "2018-03-22T00:47:18+00:00"
+    }
+]

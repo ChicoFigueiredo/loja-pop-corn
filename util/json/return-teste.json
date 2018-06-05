@@ -1,0 +1,284 @@
+{
+    "cli2": {
+        "id": 6291611,
+        "name": "Francisco Lima Figueiredo",
+        "email": "fran.fig@gmail.com",
+        "registry_code": "03910055702",
+        "code": "039.100.557-02",
+        "notes": "",
+        "status": "inactive",
+        "created_at": "2018-05-04T17:51:49.000-03:00",
+        "updated_at": "2018-05-06T09:29:05.000-03:00",
+        "metadata": {},
+        "address": {
+            "street": "Quadra 210, Lote 8, Bloco B Apto",
+            "number": "708B",
+            "additional_details": "Praça Martins Pescador, Residencial Yes",
+            "zipcode": "72932000",
+            "neighborhood": "Sul (Águas Claras)",
+            "city": "Águas Claras",
+            "state": "DF",
+            "country": "BR"
+        },
+        "phones": [{
+                "id": 2188596,
+                "phone_type": "mobile",
+                "number": "61993133560",
+                "extension": null
+            },
+            {
+                "id": 2188597,
+                "phone_type": "mobile",
+                "number": "61992382835",
+                "extension": null
+            }
+        ]
+    },
+    "paym": {
+        "payment_profile": {
+            "id": 6862133,
+            "status": "active",
+            "holder_name": "CARVALHAO PEREIRA",
+            "registry_code": null,
+            "bank_branch": null,
+            "bank_account": null,
+            "card_expiration": "2022-05-31T23:59:59.999-03:00",
+            "card_number_first_six": "555555",
+            "card_number_last_four": "5557",
+            "token": "dfc6e1ba-9338-4c22-a27a-e91d6ddbb9ad",
+            "gateway_token": "a4a591da-c0fa-426b-9c19-df011f085e25",
+            "type": "PaymentProfile::CreditCard",
+            "created_at": "2018-05-09T05:56:16.736-03:00",
+            "updated_at": "2018-05-09T05:56:16.736-03:00",
+            "payment_company": {
+                "id": 1,
+                "name": "MasterCard",
+                "code": "mastercard"
+            },
+            "payment_method": {
+                "id": 24145,
+                "public_name": "Cartão de crédito",
+                "name": "Cartão de crédito",
+                "code": "credit_card",
+                "type": "PaymentMethod::CreditCard"
+            },
+            "customer": {
+                "id": 6291611,
+                "name": "Francisco Lima Figueiredo",
+                "email": "fran.fig@gmail.com",
+                "code": "039.100.557-02"
+            }
+        }
+    },
+    "fat": {
+        "bill": {
+            "id": 21758199,
+            "code": null,
+            "amount": "183.33",
+            "installments": 1,
+            "status": "pending",
+            "seen_at": null,
+            "billing_at": null,
+            "due_at": "2018-05-17T23:59:59.000-03:00",
+            "url": "https://app.vindi.com.br/customer/bills/21758199?token=5a35ed85-d76e-46e9-ac19-bbf7882397b8",
+            "created_at": "2018-05-09T05:56:17.000-03:00",
+            "updated_at": "2018-05-09T05:56:17.000-03:00",
+            "bill_items": [{
+                    "id": 26164370,
+                    "amount": "83.33",
+                    "quantity": null,
+                    "pricing_range_id": null,
+                    "description": null,
+                    "pricing_schema": null,
+                    "product": {
+                        "id": 215139,
+                        "name": "Curso Pós-Graduação - UltraPosGraduacao",
+                        "code": null
+                    },
+                    "product_item": null,
+                    "discount": null
+                },
+                {
+                    "id": 26164371,
+                    "amount": "100.0",
+                    "quantity": null,
+                    "pricing_range_id": null,
+                    "description": null,
+                    "pricing_schema": null,
+                    "product": {
+                        "id": 196780,
+                        "name": "Taxa de Matricula",
+                        "code": null
+                    },
+                    "product_item": null,
+                    "discount": null
+                }
+            ],
+            "charges": [{
+                "id": 21099078,
+                "amount": "183.33",
+                "status": "pending",
+                "due_at": "2018-05-17T23:59:59.000-03:00",
+                "paid_at": null,
+                "installments": 1,
+                "attempt_count": 1,
+                "next_attempt": "2018-05-12T00:00:00.000-03:00",
+                "print_url": null,
+                "created_at": "2018-05-09T05:56:17.000-03:00",
+                "updated_at": "2018-05-09T05:56:18.000-03:00",
+                "last_transaction": {
+                    "id": 33993506,
+                    "transaction_type": "charge",
+                    "status": "rejected",
+                    "amount": "183.33",
+                    "installments": 1,
+                    "gateway_message": "Cartão não encontrado na tabela de intervalos",
+                    "gateway_response_code": "SIS0093",
+                    "gateway_authorization": "",
+                    "gateway_transaction_id": "16ee37b4-3b6b-41c7-a96f-ae3dba3ebe20",
+                    "gateway_response_fields": null,
+                    "fraud_detector_score": null,
+                    "fraud_detector_status": null,
+                    "fraud_detector_id": null,
+                    "created_at": "2018-05-09T05:56:17.000-03:00",
+                    "gateway": {
+                        "id": 19373,
+                        "connector": "global_payments"
+                    },
+                    "payment_profile": {
+                        "id": 6862133,
+                        "holder_name": "CARVALHAO PEREIRA",
+                        "registry_code": null,
+                        "bank_branch": null,
+                        "bank_account": null,
+                        "card_expiration": "2022-05-31T23:59:59.000-03:00",
+                        "card_number_first_six": "555555",
+                        "card_number_last_four": "5557",
+                        "token": "dfc6e1ba-9338-4c22-a27a-e91d6ddbb9ad",
+                        "created_at": "2018-05-09T05:56:16.000-03:00",
+                        "payment_company": {
+                            "id": 1,
+                            "name": "MasterCard",
+                            "code": "mastercard"
+                        }
+                    }
+                },
+                "payment_method": {
+                    "id": 24145,
+                    "public_name": "Cartão de crédito",
+                    "name": "Cartão de crédito",
+                    "code": "credit_card",
+                    "type": "PaymentMethod::CreditCard"
+                }
+            }],
+            "customer": {
+                "id": 6291611,
+                "name": "Francisco Lima Figueiredo",
+                "email": "fran.fig@gmail.com",
+                "code": "039.100.557-02"
+            },
+            "period": null,
+            "subscription": null,
+            "metadata": {},
+            "payment_profile": {
+                "id": 6862133,
+                "holder_name": "CARVALHAO PEREIRA",
+                "registry_code": null,
+                "bank_branch": null,
+                "bank_account": null,
+                "card_expiration": "2022-05-31T23:59:59.000-03:00",
+                "card_number_first_six": "555555",
+                "card_number_last_four": "5557",
+                "token": "dfc6e1ba-9338-4c22-a27a-e91d6ddbb9ad",
+                "created_at": "2018-05-09T05:56:16.000-03:00",
+                "payment_company": {
+                    "id": 1,
+                    "name": "MasterCard",
+                    "code": "mastercard"
+                }
+            },
+            "payment_condition": null
+        }
+    },
+    "sub": {
+        "subscription": {
+            "id": 4040364,
+            "status": "future",
+            "start_at": "2018-05-16T00:00:00.000-03:00",
+            "end_at": "2020-04-15T23:59:59.000-03:00",
+            "next_billing_at": "2018-06-05T00:00:00.000-03:00",
+            "overdue_since": null,
+            "code": null,
+            "cancel_at": null,
+            "interval": "months",
+            "interval_count": 1,
+            "billing_trigger_type": "day_of_month",
+            "billing_trigger_day": 5,
+            "billing_cycles": 23,
+            "installments": 1,
+            "created_at": "2018-05-09T05:56:19.378-03:00",
+            "updated_at": "2018-05-09T05:56:19.378-03:00",
+            "customer": {
+                "id": 6291611,
+                "name": "Francisco Lima Figueiredo",
+                "email": "fran.fig@gmail.com",
+                "code": "039.100.557-02"
+            },
+            "plan": {
+                "id": 61639,
+                "name": "Plano Mensal",
+                "code": null
+            },
+            "product_items": [{
+                "id": 5536025,
+                "status": "active",
+                "cycles": 23,
+                "quantity": 1,
+                "created_at": "2018-05-09T05:56:19.000-03:00",
+                "updated_at": "2018-05-09T05:56:19.000-03:00",
+                "product": {
+                    "id": 215139,
+                    "name": "Curso Pós-Graduação - UltraPosGraduacao",
+                    "code": null
+                },
+                "pricing_schema": {
+                    "id": 4180526,
+                    "short_format": "R$ 83,33",
+                    "price": "83.33",
+                    "minimum_price": null,
+                    "schema_type": "flat",
+                    "pricing_ranges": [],
+                    "created_at": "2018-05-09T05:56:19.000-03:00"
+                },
+                "discounts": []
+            }],
+            "payment_method": {
+                "id": 24145,
+                "public_name": "Cartão de crédito",
+                "name": "Cartão de crédito",
+                "code": "credit_card",
+                "type": "PaymentMethod::CreditCard"
+            },
+            "current_period": null,
+            "metadata": {},
+            "payment_profile": {
+                "id": 6862133,
+                "holder_name": "CARVALHAO PEREIRA",
+                "registry_code": null,
+                "bank_branch": null,
+                "bank_account": null,
+                "card_expiration": "2022-05-31T23:59:59.000-03:00",
+                "card_number_first_six": "555555",
+                "card_number_last_four": "5557",
+                "token": "dfc6e1ba-9338-4c22-a27a-e91d6ddbb9ad",
+                "created_at": "2018-05-09T05:56:16.000-03:00",
+                "payment_company": {
+                    "id": 1,
+                    "name": "MasterCard",
+                    "code": "mastercard"
+                }
+            }
+        },
+        "bill": null
+    }
+}

@@ -1,0 +1,105 @@
+[{
+    "cursos": [{
+            "pagamento": {
+                "taxaMatricula": 100,
+                "parcelamento": 24,
+                "parcela": 98.3,
+                "melhorDia": 20,
+                "cupom": {
+                    "valorDesconto": 0,
+                    "percentualDesconto": 0.6,
+                    "codigoCupom": "SOIFODA1",
+                    "origemCupom": "Maluco Gustavo",
+                    "tipoDesconto": "percentual"
+                },
+                "formaPagamento": "boleto",
+                "dadosCartao": {
+                    "_id": "5acfff4f09570b61082f6551",
+                    "numero": "4551 8410 3579 4397",
+                    "nome": "FRANCISCO FIGUEIRE",
+                    "bandeira": "Visa",
+                    "CVV": "952"
+                }
+            },
+            "codigoCurso": "metodologia-do-ensino-da-matematica-e-da-fisica-de-r400000-por-r160000",
+            "nomeCurso": "METODOLOGIA DO ENSINO DA MATEMÁTICA E DA FÍSICA / De R$4000,00 por R$1600,00",
+            "deAcordo": true
+        },
+        {
+            "pagamento": {
+                "taxaMatricula": 100,
+                "parcelamento": 24,
+                "parcela": 95.3,
+                "melhorDia": 20,
+                "cupom": {
+                    "valorDesconto": 0,
+                    "percentualDesconto": 0.6,
+                    "codigoCupom": "SOIFODA2",
+                    "origemCupom": "Maluco Gustavo",
+                    "tipoDesconto": "percentual"
+                },
+                "formaPagamento": "boleto",
+                "dadosCartao": {
+                    "_id": "5acfff4f09570b61082f6550",
+                    "numero": "4551 8410 3579 4397",
+                    "nome": "FRANCISCO FIGUEIRE",
+                    "bandeira": "Visa",
+                    "CVV": "952"
+                }
+            },
+            "codigoCurso": "comunicacao-e-informacao-educacional-e-empresarial-de-r400000-por-r160000",
+            "nomeCurso": "COMUNICAÇÃO E INFORMAÇÃO EDUCACIONAL E EMPRESARIAL / De R$4000,00 por R$1600,00",
+            "deAcordo": true
+        },
+        {
+            "pagamento": {
+                "taxaMatricula": 100,
+                "parcelamento": 24,
+                "parcela": 105.3,
+                "melhorDia": 20,
+                "cupom": {
+                    "valorDesconto": 0,
+                    "percentualDesconto": 0.6,
+                    "codigoCupom": "SOIFODA3",
+                    "origemCupom": "Maluco Gustavo",
+                    "tipoDesconto": "percentual"
+                },
+                "formaPagamento": "boleto",
+                "dadosCartao": {
+                    "_id": "5acfff4f09570b61082f654f",
+                    "numero": "4551 8410 3579 4397",
+                    "nome": "FRANCISCO FIGUEIRE",
+                    "bandeira": "Visa",
+                    "CVV": "952"
+                }
+            },
+            "codigoCurso": "curso-completo-preparatorio-para-o-enem-2017-partiuenem",
+            "nomeCurso": "CURSO COMPLETO PREPARATÓRIO PARA O ENEM 2017 #PARTIUENEM",
+            "deAcordo": true
+        }
+    ],
+    "_id": "5acfff52b2592ce9a10e4121",
+    "cpf": "039.100.557-02",
+    "bairro": "Sul (Águas Claras)",
+    "celular": "(61) 99238-2835",
+    "cep": "72932-000",
+    "cidade": "Águas Claras",
+    "cidadeNaturalidade": "Magé",
+    "complemento": "Praça Martins Pescador, Residencial Yes",
+    "dataNascimento": "1973-12-08",
+    "eAtivo": true,
+    "email": "fran.fig@gmail.com",
+    "endereco": "Quadra 210, Lote 8, Bloco B Apto",
+    "estadoCivil": "União estável",
+    "nome": "Francisco Lima Figueiredo",
+    "nomeMae": "Jandira Lima Figueiredo",
+    "nomePai": "Antonio Rodrigues Figueiredo",
+    "numero": "708B",
+    "numeroIdentidade": "2763789",
+    "opcaoSMS": true,
+    "orgaoExpedidor": "SSP DF",
+    "sexo": "M",
+    "uf": "DF",
+    "ufNaturalidade": "RJ",
+    "whatsapp": "(61) 99313-3560"
+}]

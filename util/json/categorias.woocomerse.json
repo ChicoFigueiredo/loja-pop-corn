@@ -1,0 +1,191 @@
+[{
+        "id": 26,
+        "name": "Alimentação",
+        "slug": "alimentacao",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/26"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 23,
+        "name": "Banho e Troca",
+        "slug": "banho-e-troca",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/23"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 19,
+        "name": "Bem Estar",
+        "slug": "bem-estar",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/19"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 20,
+        "name": "Brinquedo",
+        "slug": "brinquedo",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/20"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 27,
+        "name": "Mamãe",
+        "slug": "mamae",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/27"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 22,
+        "name": "Meninas",
+        "slug": "meninas",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/22"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 25,
+        "name": "Meninos",
+        "slug": "meninos",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/25"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 18,
+        "name": "Papai",
+        "slug": "papai",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/18"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 24,
+        "name": "Passeio",
+        "slug": "passeio",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/24"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    },
+    {
+        "id": 21,
+        "name": "Roupas",
+        "slug": "roupas",
+        "parent": 0,
+        "description": "",
+        "display": "default",
+        "image": null,
+        "menu_order": 0,
+        "count": 0,
+        "_links": {
+            "self": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories/21"
+            }],
+            "collection": [{
+                "href": "https://nova.lojapopcorn.com.br/wp-json/wc/v2/products/categories"
+            }]
+        }
+    }
+]

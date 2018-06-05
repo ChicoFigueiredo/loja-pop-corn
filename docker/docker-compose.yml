@@ -1,0 +1,17 @@
+ mongo:  
+  image: mongo:latest
+  ports:  
+   - "27017:27017"  
+#  volumes:  
+#   - './data:/data/db'  
+ application:  
+  build: .  
+  command: bash -c "npm install; nodemon bin/www --color=always"  
+  ports:  
+   - "8080:8080"  
+   - "80:80"  
+   - "5858:5858"  
+  volumes:  
+   - ../server:/usr/src/app/node  
+  links:  
+   - mongo  

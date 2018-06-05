@@ -6,57 +6,103 @@ const successful = []
 fs = require('fs')
 path = require('path')
 node_ssh = require('node-ssh')
+const { exec, execSync } = require('child_process');
 ssh = new node_ssh()
 
 
-ssh.connect({
-        host: 'sistema.lojapopcorn.com.br',
-        username: 'ubuntu',
-        privateKey: 'chico.pem',
-        port: 22,
-        onKeyboardInteractive: (name, instructions, instructionsLang, prompts, finish) => {
-            console.log(prompts[0].prompt);
-        }
-    })
-    .then(function() {
-        ssh.putDirectory('./', '/var/www/lojaPopCorn/', {
-            recursive: true,
-            concurrency: 10,
-            validate: function(itemPath) {
-                const baseName = path.basename(itemPath).toLowerCase();
-                return baseName.substr(0, 1) !== '.' && // do not allow dot files
-                    baseName !== 'node_modules' && // do not allow node_modules
-                    baseName !== 'deploy.js'
-            },
-            tick: function(localPath, remotePath, error) {
-                if (error) {
-                    failed.push(localPath)
-                    console.log(localPath + ' failed');
-                } else {
-                    successful.push(localPath)
-                    console.log(localPath + ' up');
-                }
-            }
-        }).then(function(status) {
+const HOST_URL = 'ssh.ultraposgraduacao.com.br';
+const REMOTE_DIR = '/var/www/ultra-pos/';
+const LOCAL_DIR_CLEAR = './sessions';
+const PM2_ID = 'all';
+const USER = 'root';
+const PSW = 'UltraPosGraduacao-Cursos2018'; // 'h5Y*Wff*dpDbmtUx'; 
+const FILE_KEY = '../config/ti.pem';
+
+
+var tmp = require('tmp');
+
+var tmpZip = 'zzzTmp.zip';
+console.log('ziping in file: ', tmpZip);
+
+const zipCmd = "zip.exe -9  -x node_modules/* -r \"" + tmpZip + "\" *";
+exec(zipCmd, (err, stdout, stderr) => {
+    if (err) {
+        // node couldn't execute the command
+        return "??" + err;
+    }
+    // the *entire* stdout and stderr (buffered)
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+
+    ssh.connect({
+            host: HOST_URL,
+            username: USER,
+            //privateKey: FILE_KEY,
+            password: PSW,
+            port: 22
+        })
+        .then(function() {
+            const cmdPm2Stop = "sudo sudo pm2 stop " + PM2_ID + " --update-env";
             console.log("\n\n****************************************************************************");
-            console.log('*  the directory transfer was ', status ? 'successful' : 'unsuccessful');
-            console.log('*  failed transfers: ', failed.join(', '));
-            console.log('*  successful transfers: ', successful.join(', '));
-            console.log("\n\n----------------------------------------------------------------------------");
-            const cmd1 = "sudo npm install";
-            console.log("executando: " + cmd1 + "\n");
-            ssh.execCommand(cmd1, { cwd: '/var/www/lojaPopCorn/' }).then(function(result) {
-                console.log(cmd1 + ' STDOUT: ' + result.stdout);
+            console.log("executando: " + cmdPm2Stop + "\n");
+            ssh.execCommand(cmdPm2Stop, { cwd: REMOTE_DIR }).then(function(result) {
+                console.log(cmdPm2Stop + ' STDOUT: \n' + result.stdout);
                 console.log('');
-                console.log(cmd1 + ' STDERR: ' + result.stderr);
-                console.log("\n\n----------------------------------------------------------------------------");
-                const cmd2 = "sudo pm2 restart www --update-env";
-                console.log("executando: " + cmd2 + "\n");
-                ssh.execCommand(cmd2, { cwd: '/var/www/lojaPopCorn/' }).then(function(result) {
-                    console.log(cmd2 + ' STDOUT: \n' + result.stdout);
-                    console.log(cmd2 + ' STDERR: \n' + result.stderr);
-                    ssh.dispose();
-                });
+                console.log(cmdPm2Stop + ' STDERR: \n' + result.stderr);
+
+                console.log("\n\n****************************************************************************");
+                const cmdRmFiles = 'sudo sudo sudo rm -Rfv *';
+                console.log("executando: " + cmdRmFiles + "\n");
+                ssh.execCommand(cmdRmFiles, { cwd: REMOTE_DIR }).then(function(result) {
+                    console.log(cmdRmFiles + ' STDOUT: \n' + result.stdout);
+                    console.log('');
+                    console.log(cmdRmFiles + ' STDERR: \n' + result.stderr);
+                    console.log("\n\n****************************************************************************");
+                    console.log("executando: scp " + tmpZip + " \n\n");
+
+                    ssh.putFile(tmpZip, REMOTE_DIR + tmpZip).then(function() {
+                        console.log(tmpZip + " > UP")
+
+                        const cmdUnzip = "sudo unzip -o " + tmpZip
+                        console.log("\n\n****************************************************************************");
+                        console.log("executando: " + cmdUnzip + "\n");
+                        ssh.execCommand(cmdUnzip, { cwd: REMOTE_DIR }).then(function(result) {
+                            console.log(cmdUnzip + ' STDOUT: \n' + result.stdout);
+                            console.log(cmdUnzip + ' STDERR: \n' + result.stderr);
+
+                            const cmdNpm = "sudo sudo sudo npm install "; // criando camadas sudo para poder rodar npm install
+                            console.log("\n\n****************************************************************************");
+                            console.log("executando: " + cmdNpm + "\n");
+                            ssh.execCommand(cmdNpm, { cwd: REMOTE_DIR }).then(function(result) {
+                                console.log(cmdNpm + ' STDOUT: \n' + result.stdout);
+                                console.log(cmdNpm + ' STDERR: \n' + result.stderr);
+
+                                const cmdPm2Restart = "sudo pm2 restart " + PM2_ID + " --update-env";
+                                console.log("\n\n****************************************************************************");
+                                console.log("executando: " + cmdPm2Restart + "\n");
+                                ssh.execCommand(cmdPm2Restart, { cwd: REMOTE_DIR }).then(function(result) {
+                                    console.log(cmdPm2Restart + ' STDOUT: \n' + result.stdout);
+                                    console.log(cmdPm2Restart + ' STDERR: \n' + result.stderr);
+
+                                    const cmdRmZip = "rm " + tmpZip;
+                                    console.log("\n\n****************************************************************************");
+                                    console.log("executando: " + cmdRmZip + "\n");
+                                    ssh.execCommand(cmdRmZip, { cwd: REMOTE_DIR }).then(function(result) {
+                                        console.log(cmdRmZip + ' STDOUT: \n' + result.stdout);
+                                        console.log(cmdRmZip + ' STDERR: \n' + result.stderr);
+
+                                        console.log("deletando " + tmpZip);
+                                        fs.unlink(tmpZip)
+                                        ssh.dispose();
+                                    });
+                                });
+                            });
+                        });
+                    }, function(error) {
+                        console.log("Something's wrong")
+                        console.log(error)
+                    })
+                })
             });
-        });
-    }).then(function() {});
+        }).then(function() {});
+});

@@ -1,0 +1,224 @@
+[{
+        "id": 2174736,
+        "name": {
+            "pt": "Passeio "
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "passeio"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T13:56:42.042Z",
+        "updated_at": "2018-05-21T14:39:00.000Z"
+    },
+    {
+        "id": 2174789,
+        "name": {
+            "pt": "Roupas"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "roupas"
+        },
+        "parent": 0,
+        "subcategories": [
+            2196953,
+            2196976
+        ],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T15:18:51.051Z",
+        "updated_at": "2018-05-22T19:31:56.056Z"
+    },
+    {
+        "id": 2196953,
+        "name": {
+            "pt": "Meninos"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "meninos"
+        },
+        "parent": 2174789,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-16T00:17:01.001Z",
+        "updated_at": "2018-05-22T19:22:05.005Z"
+    },
+    {
+        "id": 2196976,
+        "name": {
+            "pt": "Meninas"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "meninas"
+        },
+        "parent": 2174789,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-16T00:19:33.033Z",
+        "updated_at": "2018-05-22T19:31:56.056Z"
+    },
+    {
+        "id": 2174790,
+        "name": {
+            "pt": "Alimentação "
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "alimentacao"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T15:18:51.051Z",
+        "updated_at": "2018-05-04T23:02:40.040Z"
+    },
+    {
+        "id": 2174791,
+        "name": {
+            "pt": "Banho e Troca"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "banho-e-troca"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T15:18:51.051Z",
+        "updated_at": "2018-04-15T11:50:08.008Z"
+    },
+    {
+        "id": 2174792,
+        "name": {
+            "pt": "Mamãe"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "mamae"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T15:18:51.051Z",
+        "updated_at": "2018-04-15T11:50:08.008Z"
+    },
+    {
+        "id": 2174793,
+        "name": {
+            "pt": "Papai"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "papai"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-06T15:18:51.051Z",
+        "updated_at": "2018-04-15T11:50:08.008Z"
+    },
+    {
+        "id": 2178855,
+        "name": {
+            "pt": "Bem Estar"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "bem-estar"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-08T15:51:38.038Z",
+        "updated_at": "2018-04-15T11:50:08.008Z"
+    },
+    {
+        "id": 2179081,
+        "name": {
+            "pt": "Brinquedo"
+        },
+        "description": {
+            "pt": ""
+        },
+        "handle": {
+            "pt": "brinquedo"
+        },
+        "parent": 0,
+        "subcategories": [],
+        "seo_title": {
+            "pt": ""
+        },
+        "seo_description": {
+            "pt": ""
+        },
+        "created_at": "2017-08-08T17:33:59.059Z",
+        "updated_at": "2018-04-15T11:50:08.008Z"
+    }
+]

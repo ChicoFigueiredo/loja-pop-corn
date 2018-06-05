@@ -1,0 +1,33 @@
+{
+    "apps": [{
+            "exec_mode": "fork_mode",
+            "script": "./www-matricula",
+            "args": [
+                "--port=3005"
+            ],
+            "name": "matr-cursos.espg.com.br-3005",
+            "node_args": ["--harmony"],
+            "env": {
+                "PORT": 3005,
+                "NODE_ENV": "production"
+            },
+            "error_file": "/var/www/logs/matr-cursos.espg.com.br-3005.err.log",
+            "out_file": "/var/www/logs/matr-cursos.espg.com.br-3005.out.log"
+        },
+        {
+            "exec_mode": "fork_mode",
+            "script": "./www-matricula",
+            "args": [
+                "--port=3002"
+            ],
+            "name": "matr-ultraposgraduacao.com.br-3002",
+            "node_args": ["--harmony"],
+            "env": {
+                "PORT": 3002,
+                "NODE_ENV": "production"
+            },
+            "error_file": "/var/www/logs/matr-ultraposgraduacao.com.br-3005.err.log",
+            "out_file": "/var/www/logs/matr-ultraposgraduacao.com.br-3005.out.log"
+        }
+    ]
+}
