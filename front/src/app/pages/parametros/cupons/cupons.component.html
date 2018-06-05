@@ -1,0 +1,100 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>
+        Editor de cupons
+      </nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-md-4">
+              <div class="form-group row">
+                  <label for="site" class="col-sm-2 col-form-label">Site:</label>
+                  <div class="col-sm-10">
+                      <select #site class="form-control" name="site" id="site"  [(ngModel)]="siteSelecionado"  >
+                          <option *ngFor="let d of ultra.bancos" [value]="d.valor" >{{d.nome}}</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Cupons</h4>
+            <button type="button" class="btn btn-outline-primary btn-icon float-right first-btn" (click)="addNewCupom(site.value)">
+              <i class="ion-android-add"></i>
+            </button>
+            <table  class="table table-striped" >
+              <tbody>
+                <tr *ngFor='let c of ultra.listaCupons(site.value)' (click)="selectCupom(c)">
+                  <td width="1%"><i class="fa fa-angle-right bold" *ngIf='c._id === selCupom?._id' ></i></td>
+                  <td>{{c.codigoCupom}}</td>
+                  <td width="1%" (click)="deleteCupom(c)" ><i class="fa fa-trash"></i></td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-primary btn-icon float-right"  (click)="addNewCupom(site.value)">
+                <i class="ion-android-add" style="color:#8a7fff" ></i>
+            </button>
+          </div>
+          <div class="col-md-9 detalhe">
+            <form #f="ngForm" (ngSubmit)="onSubmit(f,siteSelecionado)">
+              <h4>Detalhe do cupom {{selCupom?.codigoCupom}} </h4>
+              <div class="form-group row">
+                <label for="site" class="col-sm-3 col-form-label">Código Cupom:</label>
+                <div class="col-sm-5">
+                  <input #codigoCupom="ngModel" type="text" name="codigoCupom" id="codigoCupom" [(ngModel)]="selCupom.codigoCupom" placeholder="Nome do Cupom (Código do Cupom)" class="form-control" required [class.form-control-danger]="codigoCupom.invalid"  oninput="this.value = this.value.toUpperCase().replace(/[ ]/gmi,'')">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="tipoDesconto" class="col-sm-3 col-form-label">Tipo de Desconto:</label>
+                <div class="col-sm-4">
+                    <select #tipo [(ngModel)]='selCupom.tipoDesconto' class="form-control" name="tipoDesconto" id="tipoDesconto">
+                        <option value="percentual">Em Percentual</option>
+                        <option value="valor">Em Valor</option>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group row" *ngIf="selCupom.tipoDesconto == 'valor'">
+                <label for="valorDesconto" class="col-sm-3 col-form-label">Desconto no Valor (R$):</label>
+                <div class="col-sm-4">
+                  <input type="text" name="valorDesconto" id="valorDesconto" [ngModel]="selCupom.valorDesconto | number:'1.2-2':'pt-BR'" (focus)='$event.target.select()' (change)="chValor('valorDesconto',$event.target.value)" (lost)="chValor('valorDesconto',$event.target.value)" placeholder="Valor Desconto Cupom" class="form-control" >
+                </div>
+              </div>              
+              <div class="form-group row" *ngIf="selCupom.tipoDesconto == 'percentual'">
+                <label for="percentualDesconto" class="col-sm-3 col-form-label">% Desconto Valor:</label>
+                <div class="col-sm-4">
+                  <input type="text" name="percentualDesconto" id="percentualDesconto" [ngModel]="selCupom.percentualDesconto | percent:'1.2-2':'pt-BR'" (focus)='$event.target.select()' (change)="chPercent('percentualDesconto',$event.target.value)" (lost)="chPercent('percentualDesconto',$event.target.value)" placeholder="% Desconto Cupom" class="form-control" >
+                </div>
+              </div>
+              <div class="form-group row" *ngIf="selCupom.tipoDesconto == 'valor'">
+                <label for="valorDescontoMatricula" class="col-sm-3 col-form-label">Desconto na Matricula (R$):</label>
+                <div class="col-sm-4">
+                  <input type="text" name="valorDescontoMatricula" id="valorDescontoMatricula" [ngModel]="selCupom.valorDescontoMatricula | number:'1.2-2':'pt-BR'" (focus)='$event.target.select()' (change)="chValor('valorDescontoMatricula',$event.target.value)" (lost)="chValor('valorDescontoMatricula',$event.target.value)" placeholder="Valor Desconto Matricula" class="form-control" >
+                </div>
+              </div>              
+              <div class="form-group row" *ngIf="selCupom.tipoDesconto == 'percentual'">
+                <label for="percentualDescontoMatricula" class="col-sm-3 col-form-label">% Desconto Matricula:</label>
+                <div class="col-sm-4">
+                  <input type="text" name="percentualDescontoMatricula" id="percentualDescontoMatricula" [ngModel]="selCupom.percentualDescontoMatricula | percent:'1.2-2':'pt-BR'" (focus)='$event.target.select()' (change)="chPercent('percentualDescontoMatricula',$event.target.value)" (lost)="chPercent('percentualDescontoMatricula',$event.target.value)" placeholder="% Desconto Matricula" class="form-control" >
+                </div>
+              </div>  
+              <div class="form-group row">
+                <label for="site" class="col-sm-3 col-form-label">Quantidade Cupons:</label>
+                <div class="col-sm-4">
+                  <input #quantidadeUsos="ngModel" type="text" name="quantidadeUsos" id="quantidadeUsos" [ngModel]="selCupom.quantidadeUsos | number:'1.0-0':'pt-BR'" (focus)='$event.target.select()' (change)="chValor('quantidadeUsos',$event.target.value)" (lost)="chValor('quantidadeUsos',$event.target.value)" placeholder="Quantidade Cupons" class="form-control" pattern="(-1|(\d|[.]){1,})"  [class.form-control-danger]="quantidadeUsos.invalid"  >
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-10">
+                  <button type="submit" class="btn btn-success float-right"><i class="fa fa-save fa-2x" style="color:white"></i> Salvar Cupom</button>
+                  <span class="btn btn-danger" (click)="deleteCupom(selCupom)"><i class="fa fa-trash fa-2x" style="color:white"></i> Deletar Cupom</span>
+                </div>
+              </div>
+              
+            </form>            
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

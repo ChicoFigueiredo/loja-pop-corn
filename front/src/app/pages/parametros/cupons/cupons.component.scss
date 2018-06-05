@@ -1,0 +1,50 @@
+button {
+  margin-bottom: .5em;
+  cursor: pointer !important;
+  &.first-btn {
+    margin-top: -1.5em; 
+  }
+  i {
+    color:#8a7fff;
+  }
+}
+table {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  tr {
+    i {
+      font-size: 1.5em;
+      color:#8a7fff;
+      &.bold {
+        font-weight: bold;
+      }
+    }
+    &:hover {
+    cursor: pointer;
+    background-color: peachpuff !important;
+    }
+  }
+}
+.detalhe {
+  border-left: #909090 solid 2px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-danger {
+  cursor: pointer !important;
+  i {
+    cursor: pointer !important;
+  }
+}
+
+select {
+  width: 100% !important;
+}
+
+label {
+  margin-top: auto;
+  margin-bottom: auto;
+}

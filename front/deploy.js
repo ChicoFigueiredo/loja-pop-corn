@@ -9,8 +9,12 @@ node_ssh = require('node-ssh')
 ssh = new node_ssh()
 
 
+const HOST_URL = 'admin.academiabancaria.com.br';
+const REMOTE_DIR = '/var/www/admin-cl-beneficios/';
+const LOCAL_DIR = '../admin-server/spa/';
+
 ssh.connect({
-        host: 'sistema.lojapopcorn.com.br',
+        host: HOST_URL,
         username: 'ubuntu',
         privateKey: 'chico.pem',
         port: 22
@@ -19,13 +23,13 @@ ssh.connect({
         console.log("\n\n****************************************************************************");
         const cmd1 = 'rm -Rfv *';
         console.log("executando: " + cmd1 + "\n");
-        ssh.execCommand(cmd1, { cwd: '/var/www/lojaPopCorn/spa/' }).then(function(result) {
+        ssh.execCommand(cmd1, { cwd: REMOTE_DIR + 'spa/' }).then(function(result) {
             console.log(cmd1 + ' STDOUT: \n' + result.stdout);
             console.log('');
             console.log(cmd1 + ' STDERR: \n' + result.stderr);
             console.log("\n\n****************************************************************************");
             console.log("executando: scp dir \n\n");
-            ssh.putDirectory('../server/spa/', '/var/www/lojaPopCorn/spa/', {
+            ssh.putDirectory(LOCAL_DIR, REMOTE_DIR + 'spa/', {
                 recursive: true,
                 concurrency: 10,
                 validate: function(itemPath) {
@@ -50,7 +54,4 @@ ssh.connect({
                 ssh.dispose();
             });
         })
-
-
-
     }).then(function() {});
